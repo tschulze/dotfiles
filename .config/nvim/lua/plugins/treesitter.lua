@@ -11,7 +11,7 @@ return {
     },
     opts = {
         ensure_installed = {
-            "bash", "c", "diff", "html", "lua", "luadoc", "markdown", "markdown_inline", "query", "vim", "vimdoc", "rust", 'regex', "php", "blade"
+            "bash", "diff", "html", "lua", "luadoc", "markdown", "markdown_inline", "query", "vim", "vimdoc", "swift", "regex"
         },
         -- Autoinstall languages that are not installed
         auto_install = true,

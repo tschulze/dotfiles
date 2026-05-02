@@ -1,17 +1,14 @@
 return {
-	"stevearc/oil.nvim",
-	---@module 'oil'
-	---@type oil.SetupOpts
-	opts = {},
-	-- Optional dependencies
-	dependencies = { { "nvim-mini/mini.icons", opts = {} } },
+	"mikavilpas/yazi.nvim",
+	event = "VeryLazy",
 	keys = {
 		{
 			"-",
 			function()
-				require("oil").open_float()
+				require("yazi").yazi()
 			end,
-			desc = "Open parent directory",
+			desc = "Open yazi",
 		},
 	},
+	opts = {},
 }
