@@ -1,9 +1,9 @@
 #
-#    ______          __     ____                 __  ______ 
+#    ______          __     ____                 __  ______
 #   / ____/___  ____/ /__  / __ \____  _____    / / / / __ \
 #  / /   / __ \/ __  / _ \/ / / / __ \/ ___/   / /_/ / / / /
-# / /___/ /_/ / /_/ /  __/ /_/ / /_/ (__  )   / __  / /_/ / 
-# \____/\____/\__,_/\___/\____/ .___/____/   /_/ /_/\___\_\ 
+# / /___/ /_/ / /_/ /  __/ /_/ / /_/ (__  )   / __  / /_/ /
+# \____/\____/\__,_/\___/\____/ .___/____/   /_/ /_/\___\_\
 #                            /_/
 #
 #
@@ -375,4 +375,10 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Tmuxifier config for zsh plugins
 # eval "$(tmuxifier init -)"
+
+# Auto-start tmux: attach to existing session or create a new one
+if [[ -x "$(command -v tmux)" && -z "$TMUX" ]]; then
+  tmux attach-session 2>/dev/null || tmux new-session
+  exit
+fi
 
