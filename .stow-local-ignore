@@ -1,3 +1,4 @@
+^\.git$
 ^check-deps\.sh$
 ^setup\.sh$
 ^LICENSE$
