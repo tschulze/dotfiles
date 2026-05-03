@@ -14,7 +14,7 @@ and if you have tmuxifier installed, you can uncomment the tmuxifier line in the
 To use this repository, simply clone it and install the dotfiles with a single command.
 
 ```bash
-git clone https://github.com/tschulze/dotfiles.git && stow -d dotfiles .
+git clone https://github.com/tschulze/dotfiles.git && stow -d dotfiles -t ~ .
 ```
 
 You are now ready to use the dotfiles in your environment.
