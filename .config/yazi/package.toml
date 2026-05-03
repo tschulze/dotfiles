@@ -11,7 +11,7 @@ hash = "3996fc74044bc44144b323686f887e1"
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
 rev = "d1c8baa"
-hash = "63b6c222bf2103b3023389dde5e2ecfe"
+hash = "3cce60031b27cbce80b50f68ca319c0a"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
@@ -26,4 +26,4 @@ hash = "e65cd1dea5feb9ca58c33b870ca3070"
 [[flavor.deps]]
 use = "kalidyasin/yazi-flavors:tokyonight-night"
 rev = "fa19b40"
-hash = "648270973268682226755084692d6dfc"
+hash = "fd99189fe362330c683de88d7189b44"
