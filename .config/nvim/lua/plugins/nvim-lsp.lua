@@ -224,6 +224,7 @@ return {
         config.capabilities = vim.tbl_deep_extend('force', {}, capabilities, config.capabilities or {})
         vim.lsp.config(name, config)
       end
+      vim.lsp.enable(vim.tbl_keys(servers))
 
       -- Ensure the servers and tools above are installed
       --
