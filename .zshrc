@@ -371,6 +371,7 @@ source ~/.config/zsh/zsh-syntax-highlighting-tokyonight.zsh
 source <(fzf --zsh)
 
 # Zoxide config for zsh plugins
+export _ZO_DOCTOR=0
 eval "$(zoxide init --cmd cd zsh)"
 
 # Tmuxifier config for zsh plugins

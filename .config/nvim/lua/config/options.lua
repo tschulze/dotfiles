@@ -75,6 +75,13 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+-- Folding: enabled, indentation-based, start fully unfolded.
+vim.opt.foldenable = true
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldcolumn = '0'
+vim.opt.foldmethod = 'indent'
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
