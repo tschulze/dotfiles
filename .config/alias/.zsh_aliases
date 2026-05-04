@@ -6,25 +6,10 @@
 # NOTE: In Git Bash, you can use something like "/c/Program\ Files/Notepad++/notepad++.exe"
 #######################################################
 
-export EDITOR=vim
-export VISUAL=vim
-export SUDO_EDITOR=vim
-export FCEDIT=vim
-
 # We will default to use either Neovim https://neovim.io or vim instead of vi
 # NOTE: vi is POSIX compliant but vim has more features and Neovim is more extensible
 # http://www.viemu.com/a-why-vi-vim.html
 # https://www.linuxfordevices.com/tutorials/linux/vim-vs-neovim
-if [[ -x "$(command -v nvim)" ]]; then
-	alias vi='nvim'
-	alias vim='nvim'
-	alias svi='sudo nvim'
-	alias vis='nvim "+set si"'
-elif [[ -x "$(command -v vim)" ]]; then
-	alias vi='vim'
-	alias svi='sudo vim'
-	alias vis='vim "+set si"'
-fi
 
 #######################################################
 # Set default variable values
